@@ -1,0 +1,68 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 300px; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+left: 30px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 150px;
+  box-shadow: 0 2px 1px 0px rgba(0,0,0,0.2);
+  -webkit-animation-name: transition;
+  -webkit-animation-duration: 0.4s;
+  animation-name: transition;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes transition {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@keyframes transition {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* The Close Button */
+.close {position: absolute;
+  z-index: 2;
+  right: 5px;
+  color: #EEC6CE;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+}
+
+.close:hover,
+.close:focus {
+  color: #F8F8F8;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+}
+
+.img img{padding: none;
+max-width:100%;
+max-height:100%;}
+
+#myBtn {background: #EEC6CE;
+border: solid 2px #EEC6CE;
+border-radius: 4px;
+color: white;
+cursor: pointer;}
